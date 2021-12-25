@@ -1,3 +1,6 @@
+/* The purpose of this is to record the number of hours one sleeps per week and the ideal number of hours one would like to sleep. Using numerous functions, a 
+statement is printed to the console specifying the sleep debt and a message based on the difference between the actual and ideal sleep hours.*/
+
 // Sleep hours for each day. Could have used a switch statement, but this will do:
 
 const getSleepHours = (day) => {
