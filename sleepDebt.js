@@ -1,4 +1,4 @@
-
+// Sleep hours for each day. Could have used a switch statement, but this will do:
 
 const getSleepHours = (day) => {
   day = day.toLowerCase();
@@ -21,21 +21,24 @@ const getSleepHours = (day) => {
   }
 }
 
-
+// Test the function works above. Returns 8 and 9 respectively.
 console.log(getSleepHours('friday'));
 console.log(getSleepHours('monday'));
 
+// Adds all the hours and returns the total number of sleep hours:
 const getActualSleepHours = () => {
   let totalSleepHours = getSleepHours('monday') + getSleepHours('tuesday') + getSleepHours('wednesday') + getSleepHours('thursday') + getSleepHours('friday') + getSleepHours('saturday') + getSleepHours('sunday');
   return totalSleepHours;
 }
 
+// Parameter holds the number of ideal hours each night and multiplies by 7 to get the total number of (ideal) sleep hours per week.
 const getIdealSleepHours = (number) => {
   let idealHours = number;
   let idealHoursTotal = idealHours * 7;
   return idealHoursTotal;
 }
 
+// The difference between actual and ideal sleep hours, and returns are statement depending on this difference.
 const calculateSleepDebt = () => {
   let actualSleepHours = getActualSleepHours();
   let idealSleepHours = getIdealSleepHours(8);
@@ -51,6 +54,6 @@ const calculateSleepDebt = () => {
   return `Sleep debt is: ${sleepDebt}`;
 }
 
-
+// Calls functions
 console.log(calculateSleepDebt());
 
