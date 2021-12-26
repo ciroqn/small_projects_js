@@ -17,3 +17,27 @@ const howOld = (age, year) => {
     return 'Uh oh, something went wrong';
   }
 }
+
+/* Function 2: a function that allows two parameters to calculate the tip that is recommended as a percentage of the total bill: the first is 'quality' 
+[of service] (i.e. 'good', 'bad' etc.) and the second is 'total' (or the total amount the bill came to:*/
+
+const tipCalculator = (quality, total) => {
+  quality = quality.toLowerCase();
+  let tip;
+  if (quality === 'bad') {
+    tip = 0.05*total;
+    return tip;
+  } else if (quality === 'ok') {
+    tip = 0.15*total;
+    return tip;
+  } else if (quality === 'good') {
+    tip = 0.2*total;
+    return tip;
+  } else if (quality === 'excellent') {
+    tip = 0.3*total;
+    return tip;
+  } else {
+    tip = 0.18*total;
+    return tip;
+  }
+}
