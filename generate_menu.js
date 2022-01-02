@@ -87,4 +87,11 @@ menu.addDishToCourse('desserts', 'Eton Mess', 10.50);
 console.log(menu.generateRandomMeal());
 }
 
+/*Example print-out from line 87:
+Your randomly generated three-course meal: 
+    Broccoli and Stilton Soup,
+    Margherita Pizza,
+    Eton Mess
+    The total price is $24
+*/
 
