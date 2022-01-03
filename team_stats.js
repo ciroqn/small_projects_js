@@ -73,6 +73,11 @@ team.addGame('LA Galaxy', 3, 1);
 console.log(team._players);
 console.log(team._games);
 
+// The above can also be called using the getters:
+
+console.log(team.players);
+console.log(team.games);
+
 /*Resulting printouts from the above console.logs:
 
 [ { firstName: 'Luis', lastName: 'Figo', age: 26 },
