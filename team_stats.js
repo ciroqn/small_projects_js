@@ -72,3 +72,17 @@ team.addGame('LA Galaxy', 3, 1);
 
 console.log(team._players);
 console.log(team._games);
+
+/*Resulting printouts from the above console.logs:
+
+[ { firstName: 'Luis', lastName: 'Figo', age: 26 },
+  { firstName: 'Eric', lastName: 'Cantona', age: 34 },
+  { firstName: 'Mark', lastName: 'Viduka', age: 31 },
+  { firstName: 'Hidetoshi', lastName: 'Nakata', age: 29 },
+  { firstName: 'Gabriel', lastName: 'Batistuta', age: 36 } ]
+[ { opponent: 'Barcelona', teamPoints: 3, opponentPoints: 3 },
+  { opponent: 'PSG', teamPoints: 1, opponentPoints: 0 },
+  { opponent: 'Juventus', teamPoints: 4, opponentPoints: 2 },
+  { opponent: 'Dortmund', teamPoints: 1, opponentPoints: 2 },
+  { opponent: 'LA Galaxy', teamPoints: 3, opponentPoints: 1 } ]
+  */
