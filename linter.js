@@ -21,7 +21,7 @@ const filterWords = storyWords.filter(word => {
   }
 })
 
-const countOveruse = betterWords.filter(word => {
+const countOveruse = filterWords.filter(word => {
   if (overusedWords.includes(word)) {
     return word;
   }
@@ -33,7 +33,7 @@ const overusedCount = countOveruse.length;
 //console.log(betterWords);
 console.log(overusedCount);
 
-const countSentencesPeriod = betterWords.filter(word => {
+const countSentencesPeriod = filterWords.filter(word => {
   if (word[word.length-1] === '.' || word[word.length-1] === '!') {
     return word;
   }
