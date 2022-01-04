@@ -30,8 +30,7 @@ const countOveruse = filterWords.filter(word => {
 // A count of how many times an overused word was used
 const overusedCount = countOveruse.length;
 
-//console.log(betterWords);
-console.log(overusedCount);
+//console.log(overusedCount);
 
 const countSentencesPeriod = filterWords.filter(word => {
   if (word[word.length-1] === '.' || word[word.length-1] === '!') {
@@ -40,6 +39,17 @@ const countSentencesPeriod = filterWords.filter(word => {
 })
 
 // Number of sentences:
-console.log(countSentencesPeriod.length);
+//console.log(countSentencesPeriod.length);
 
-console.log(countSentencesPeriod);
+//console.log(countSentencesPeriod);
+
+// Formatting the statistics in a string:
+const statsLayout = () => {
+  return `A number of unnecessary words have been removed. We counted ${overusedCount} overused words (i.e. 'really', 'very', 'basically') and ${sentenceCount} sentences.`
+}
+
+// Invoke function above
+console.log(statsLayout());
+
+
+
