@@ -45,7 +45,7 @@ const countSentencesPeriod = filterWords.filter(word => {
 
 // Formatting the statistics in a string:
 const statsLayout = () => {
-  return `A number of unnecessary words have been removed. We counted ${overusedCount} overused words (i.e. 'really', 'very', 'basically') and ${sentenceCount} sentences.`
+  return `Some unnecessary words have been removed. We counted ${overusedCount} overused words (i.e. 'really', 'very', 'basically') and ${sentenceCount} sentences.`
 }
 
 // Invoke function above
