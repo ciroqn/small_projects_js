@@ -15,11 +15,9 @@ const storyWords = story.split(' ');
 
 console.log(storyWords.length);
 
-const betterWords = [];
-
 const filterWords = storyWords.filter(word => {
   if (!unnecessaryWords.includes(word)) {
-    betterWords.push(word);
+    return word;
   }
 })
 
