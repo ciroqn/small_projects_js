@@ -67,7 +67,7 @@ const toEmoticon = (emotion) => {
   }
 }
 
-// Factorial Function:
+// Function 4: Factorial Function:
 const factorial = number => {
   let count = number-1;
   let result = number;
@@ -78,7 +78,7 @@ const factorial = number => {
   return result;
 }
 
-/* Function that takes in a string and a character and returns a number, representing the length between the two occurences of the character (including
+/* Function 5: Function that takes in a string and a character and returns a number, representing the length between the two occurences of the character (including
 the indices of the recurring characters. The function should return '0' if the 'char' only occurs once, thrice, or none at all. For example,
  numBetween('donkey', 'n') should return 0, and numBetween('Saturday', 'a') should return '6': */
 
@@ -97,7 +97,7 @@ const numBetween = (string, char) => {
   }
 }
 
-// Reverses an array:
+// Function 6: Reverses an array:
 
 const reverseArray = array => {
   let newArr = [];
@@ -107,7 +107,7 @@ const reverseArray = array => {
   return newArr;
 }
 
-// Greets multiple people (aliens in this case) using for loop:
+// Function 7: Greets multiple people (aliens in this case) using for loop:
 
 const greetAliens = arr => {
   for (let i = 0; i < arr.length; i++) {
@@ -115,7 +115,7 @@ const greetAliens = arr => {
   }
 }
 
-/* Prepends 'baby' (can be generalised, of course) to each element in array. For e.g., convertToBaby(['panda', 'rabbit', 'tortoise']) returns 
+/* Function 8: Prepends 'baby' (can be generalised, of course) to each element in array. For e.g., convertToBaby(['panda', 'rabbit', 'tortoise']) returns 
  ['baby panda', 'baby rabbit', 'baby tortoise']  */
 
 const convertToBaby = arr => {
@@ -125,7 +125,7 @@ const convertToBaby = arr => {
   return arr;
 }
 
-// Function that returns the minimum multiple of two that is greater than the current iterator. For example [3, 6, 10, 24] should return [4, 8, 16, 32].
+// Function 9: Function that returns the minimum multiple of two that is greater than the current iterator. For example [3, 6, 10, 24] should return [4, 8, 16, 32].
 
 const smallestPowerOfTwo = arr => {
       let results = [];
@@ -142,7 +142,7 @@ const smallestPowerOfTwo = arr => {
       return results
 }
 
-/* declineEverything(...) and acceptEverything(...) logs a statement to the console. They both do the same job, but the way in which they're constructed is 
+/* Function 10: declineEverything(...) and acceptEverything(...) logs a statement to the console. They both do the same job, but the way in which they're constructed is 
 different.*/ 
 
 const veggies = ['broccoli', 'spinach', 'cauliflower', 'broccoflower'];
@@ -166,7 +166,7 @@ const acceptEverything = arr => {
   }
 }
 
-// Squaring numbers in array:
+// Function 11: Squaring numbers in array:
 
 const toSquare = num => num * num
 
