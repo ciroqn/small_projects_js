@@ -115,3 +115,15 @@ const greetAliens = arr => {
   }
 }
 
+/* Prepends 'baby' (can be generalised, of course) to each element in array. For e.g., convertToBaby(['panda', 'rabbit', 'tortoise']) returns 
+ ['baby panda', 'baby rabbit', 'baby tortoise']  */
+
+const convertToBaby = arr => {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = 'baby ' + arr[i];
+  }
+  return arr;
+}
+
+
+
