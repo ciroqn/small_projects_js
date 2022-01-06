@@ -127,8 +127,6 @@ const convertToBaby = arr => {
 
 // Function that returns the minimum multiple of two that is greater than the current iterator. For example [3, 6, 10, 24] should return [4, 8, 16, 32].
 
-const numbers = [5, 3, 9, 30];
-
 const smallestPowerOfTwo = arr => {
       let results = [];
       for (let i = 0; i < arr.length; i++) {
