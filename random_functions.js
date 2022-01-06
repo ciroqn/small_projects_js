@@ -66,3 +66,14 @@ const toEmoticon = (emotion) => {
       break;
   }
 }
+
+// Factorial Function:
+const factorial = number => {
+  let count = number-1;
+  let result = number;
+  while (count > 0) {
+    result *= count;
+    count--;
+  }
+  return result;
+}
