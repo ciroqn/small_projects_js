@@ -77,3 +77,22 @@ const factorial = number => {
   }
   return result;
 }
+
+/* Function that takes in a string and a character and returns a number, representing the length between the two occurences of the character (including
+the indices of the recurring characters. The function should return '0' if the 'char' only occurs once, thrice, or none at all. For example,
+ numBetween('donkey', 'n') should return 0, and numBetween('Saturday', 'a') should return '6': */
+
+const numBetween = (string, char) => {
+  let indices = [];
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === char) {
+      indices.push(i);
+    }
+  }
+
+  if (indices.length === 0 || indices.length === 1 || indices.length === 3) {
+    return 0;
+  } else {
+    return indices[1] - indices[0] + 1;
+  }
+}
