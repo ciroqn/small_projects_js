@@ -96,3 +96,13 @@ const numBetween = (string, char) => {
     return indices[1] - indices[0] + 1;
   }
 }
+
+// Reverses an array:
+
+const reverseArray = array => {
+  let newArr = [];
+  for (let i = 0; i < array.length; i++) {
+    newArr.unshift(array[i]);
+  }
+  return newArr;
+}
