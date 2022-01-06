@@ -141,3 +141,28 @@ const smallestPowerOfTwo = arr => {
       }
       return results
 }
+
+/* declineEverything(...) and acceptEverything(...) logs a statement to the console. They both do the same job, but the way in which they're constructed is 
+different.*/ 
+
+const veggies = ['broccoli', 'spinach', 'cauliflower', 'broccoflower'];
+
+// Function to be used in .forEach()
+const politelyDecline = (veg) => {
+      console.log('No ' + veg + ' please. I will have pizza with extra cheese.');
+}
+
+// Decline everything (Note that in .forEach, the callback is politelyDecline(veg)
+const declineEverything = arr => {
+  arr.forEach(politelyDecline);
+}
+
+declineEverything(veggies);
+
+// Accept Everything:
+const acceptEverything = arr => {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(`Ok, I guess I will eat some ${arr[i]}.`);
+  }
+}
+
