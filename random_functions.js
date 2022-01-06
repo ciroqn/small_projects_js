@@ -109,7 +109,6 @@ const reverseArray = array => {
 
 // Greets multiple people (aliens in this case) using for loop:
 
-// Write your code here:
 const greetAliens = arr => {
   for (let i = 0; i < arr.length; i++) {
     console.log(`Oh powerful ${arr[i]}, we humans offer our unconditional surrender!`);
