@@ -166,3 +166,10 @@ const acceptEverything = arr => {
   }
 }
 
+// Squaring numbers in array:
+
+const toSquare = num => num * num
+
+const squareNums = arr => {
+  return arr.map(toSquare);
+}
