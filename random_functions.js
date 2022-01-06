@@ -174,12 +174,12 @@ const squareNums = arr => {
   return arr.map(toSquare);
 }
 
-// Function 12: returns capitalised elements of an array. e.g.: shoutGreetings(["hi", "friend"]) returns ['HI', 'FRIEND']
+// Function 12: returns capitalised elements of an array. e.g.: shoutGreetings(["hi", "friend"]) returns ['HI!', 'FRIEND!']
 
 const shoutGreetings = arr => {
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {
-    newArr.push(arr[i].toUpperCase());
+    newArr.push(arr[i].toUpperCase()+'!');
   }
   return newArr;
 }
