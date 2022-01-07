@@ -184,3 +184,17 @@ const shoutGreetings = arr => {
   return newArr;
 }
 
+/* Function that takes a list of groceries and returns a sentence of those grocery items with commas between items and the word 'and' before the last grocery.
+For example: groceries([{item: 'Carrots'}, {item: 'Hummus'}, {item: 'Pesto'}, {item: 'Rigatoni'}]) should print: 'Carrots, Hummus, Pesto and Rigatoni'*/
+
+const groceries = arr => {
+  let groceryArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    groceryArr.push(arr[i].item+', ');
+  }
+  groceryArr.splice(groceryArr.length-1, 0, ' and ');
+  groceryArr[groceryArr.length-1] = arr[arr.length-1].item;
+  groceryArr[groceryArr.length-3] = arr[arr.length-2].item;
+
+  return groceryArr.join('');
+}
