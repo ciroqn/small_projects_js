@@ -6,6 +6,7 @@ Functions included in '_':
   inRange(number, start, end)
   words(string)
   pad(string, length)
+  has(obj, key)
   
   */
 
@@ -60,6 +61,14 @@ const _ = {
     } else {
       return  ' '.repeat(floorOddLeftover) + string + ' '.repeat(floorOddLeftover+leftOverPadding);
     }
+  },
+  
+  has(obj, key) {
+    if (Object.keys(obj).includes(key)) {
+      return true;
+    } else {
+      return false;
+    } 
   }
 
 };
