@@ -1,5 +1,13 @@
 /*This project is based on the lodash object which contains a library of functions/methods. This is in the spirit of lodash, and contains random functions/methods
-such as string methods and array manipulations (often involving iterators and built-in functions). This is currently ongoing.*/
+such as string methods and array manipulations (often involving iterators and built-in functions). This is currently ongoing.
+
+Functions included in '_':
+  clamp(num, lower, upper)
+  inRange(number, start, end)
+  words(string)
+  pad(string, length)
+  
+  */
 
 const _ = {
   clamp(num, lower, upper) {
