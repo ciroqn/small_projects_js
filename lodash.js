@@ -69,6 +69,56 @@ const _ = {
     } else {
       return false;
     } 
-  }
+  },
+  
+  invert(obj) {
+    let invertedObject = {};
+    // Each property in obj is assigned the value to what was the 'value':
+    for (let property in obj) {
+      let originalValue = obj[property];
+      invertedObject[originalValue] = property;
+    }
+    return invertedObject;
+  },
+
+  findKey(obj, predicate) {
+    for (let key in obj) {
+      let value = obj[key];
+      let truthyPredicateVal = predicate(value);
+      if (truthyPredicateVal) {
+        return key;
+      };
+    };
+    return undefined;
+  },
+
+  drop(arr, num) {
+    if (!num) {
+      let removeOne = arr.splice(-1, 1);
+      return removeOne;
+    }
+    let newArr = arr.splice(num);
+    return newArr;
+  },
+
+  dropWhile(arr, predicate) {
+    let index = arr.findIndex((element, index) => {
+      return !predicate(element, index, arr);
+    })
+    let newArr = this.drop(arr, index);
+    return newArr;
+    },
+
+    chunk(arr, size) {
+      if (!size) {
+        size = 1;
+      };
+      let arrayChunks = [];
+      for (let i = 0; i < arr.length; i += size) {
+        let arrayChunk = arr.slice(i, i+size);
+        arrayChunks.push(arrayChunk);
+      }
+      return arrayChunks;
+      }
 
 };
