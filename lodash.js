@@ -7,7 +7,11 @@ Functions included in '_':
   words(string)
   pad(string, length)
   has(obj, key)
-  
+  invert(obj)
+  findKey(obj, predicate)
+  drop(arr, num)
+  dropWhile(arr, predicate)
+  chunk(arr, size)
   */
 
 const _ = {
@@ -109,16 +113,16 @@ const _ = {
     return newArr;
     },
 
-    chunk(arr, size) {
-      if (!size) {
-        size = 1;
-      };
-      let arrayChunks = [];
-      for (let i = 0; i < arr.length; i += size) {
-        let arrayChunk = arr.slice(i, i+size);
-        arrayChunks.push(arrayChunk);
-      }
-      return arrayChunks;
-      }
+   chunk(arr, size) {
+     if (!size) {
+       size = 1;
+     };
+     let arrayChunks = [];
+     for (let i = 0; i < arr.length; i += size) {
+       let arrayChunk = arr.slice(i, i+size);
+       arrayChunks.push(arrayChunk);
+     }
+     return arrayChunks;
+     }
 
 };
